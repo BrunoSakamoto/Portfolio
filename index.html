@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Meu Portfólio</h1><h3>Bruno Araújo Sakamoto</h3>
+    </header>
+    <main class="main-content">
+        <div class="profile-section">
+            <div class="profile-picture">
+                <img src="img/goat.jpg" alt="">
+            </div>
+            <div class="description">
+                <h4>Olá sou Bruno Araújo Sakamoto, sou estudante de Análise e Desenvolvimento de Sistemas no Senai e 
+                estagiário da 2RP NET. Dentro deste portfólio, você encontrará exemplos de projetos recentes 
+                realizados no decorrer de um semestre. Cada projeto inclui detalhes sobre o processo de
+                desenvolvimento e as tecnologias utilizadas.</h4>
+            </div>
+        </div>
+        <div class="tools-section">
+            <h2>Principais ferramentas que eu utilizei:</h2>
+            <div class="tool-icons">
+                <img src="img/vscode.jpg" alt="JavaScript">
+                <img src="img/intelliJ.png" alt="Java">
+                <img src="img/googleColab.png" alt="cien.D">
+                <img src="img/pgAdmin.png" alt="BancoDados">
+                <img src="img/tinkercad.png" alt="C++">
+            </div>
+        </div>
+        <div class="projects">
+            <p>Aqui você encontrará os projetos feitos em Automação Industrial, Desenvolvimento WEB, Banco de Dados, 
+            Linguagem de Programação e Ciência de Dados.</p>
+            <p>Convido você a explorar meu portfólio e conhecer um pouco mais sobre o meu trabalho. Estou à disposição para 
+            discussões sobre possíveis colaborações e projetos futuros.</p>
+            <div id="content" class="links">
+                <button class="btn" onclick="showContent('Automação Industrial')">Automação Industrial</button>
+                <button class="btn" onclick="showContent('Desenvolvimento WEB')">Desenvolvimento WEB</button>
+                <button class="btn" onclick="showContent('Banco de Dados')">Banco de Dados</button>
+                <button class="btn" onclick="showContent('Linguagem de Programação')">Linguagem de Programação</button>
+                <button class="btn" onclick="showContent('Ciência de Dados')">Ciência de Dados</button>
+            </div>
+        </div>
+        <div class="contato">
+            <button class="link" onclick="redirecionar()">
+                <img src="img/github.png" alt="github"></button>
+        </div>
+    </main>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+            <button class="btn-close" onclick="closeModal()">Voltar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -5,28 +5,24 @@ const works = {
         <h4>Aqui irei mostrar alguns dos projetos realizados e o que eles fazem:</h4>
         <h3>Semáforo</h3>
         <p>Nesse projeto simulamos as luzes de um semáforo em um arduino utilizando LEDs.</p>
-        <img src="img/Desligado.png" alt="Projeto de Automação Industrial" style="width:250px">
-        <img src="img/SinalVermelho.png" alt="Projeto de Automação Industrial" style="width:250px">
-        <img src="img/SinalAmarelo.png" alt="Projeto de Automação Industrial" style="width:250px">
-        <img src="img/SinalVerde.png" alt="Projeto de Automação Industrial" style="width:250px">
+        <video width="100%" height="360" controls>
+        <source src="video/VideoSemaforo.mp4" type="video/mp4"></video>
         <p>Os leds da esquerda (verde e vermelho) representam o semáforo para pedestres e o botão é utilizado para
         diminuir o tempo em que a luz verde para os carros ficará acesa, assim possibilitando a travessia dos
         pedestres.</p>
         <h3>Buzzer</h3>
         <p>Na automação industrial e projetos de eletrônica, o uso de sensores e atuadores é fundamental. 
-        Um exemplo comum é o uso de um fotoresistor (sensor de luz) juntamente com um buzzer (atuador sonoro).</p>
-        <img src="img/buzzer.png" alt="Projeto de Automação Industrial" style="width:250px">
-        <img src="img/buzzer verde.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/buzzer amarelo.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/buzzer vermelho.png" alt="Projeto de Automação Industrial" style="width:250px;">
+        Um exemplo comum é o uso de um fotoresistor (sensor de luz) juntamente com um buzzer (atuador sonoro).
+        <video width="100%" height="360" controls>
+        <source src="video/VideoBuzzer.mp4" type="video/mp4"></video>
         <p>Neste projeto, integramos esses componentes para criar um sistema onde o buzzer toca quando o nível 
         de luz detectado pelo fotoresistor atinge um determinado valor.</p>
         <h3>Potenciômetro</h3>
         <p>O potenciômetro é um componente eletrônico que permite variar a resistência elétrica de forma controlada, 
         geralmente girando um botão ou um eixo. No contexto do Arduino, o potenciômetro é comumente utilizado para 
         controlar o brilho de um LED, a posição de um servo motor, o volume de um alto-falante, entre outras aplicações.</p>
-        <img src="img/potenciometro(claro).png" alt="Projeto de Automação Industrial" style="width:450px;">
-        <img src="img/potenciometro(escuro).png" alt="Projeto de Automação Industrial" style="width:450px;">
+        <video width="100%" height="360" controls>
+        <source src="video/VideoPotenciometro.mp4" type="video/mp4"></video>
         <p>Neste projeto, um potenciômetro é usado como um dispositivo de entrada analógica. Ele fornece uma resistência 
         variável que pode ser ajustada manualmente pelo usuário. O Arduino lê a resistência medida pelo potenciômetro 
         através de uma de suas portas analógicas. Com base nessa leitura analógica, o Arduino calcula um valor proporcional 
@@ -35,10 +31,8 @@ const works = {
         <p>Um visor de sete segmentos é um componente eletrônico comum usado para exibir números, letras e alguns caracteres 
         especiais de forma simplificada. Esses segmentos são chamados de "a", "b", "c", "d", "e", "f" e "g" e, quando são 
         acesos de forma apropriada, podem formar diferentes dígitos.</p>
-        <img src="img/Contador.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/Contador0.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/Contador2.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/Contador4.png" alt="Projeto de Automação Industrial" style="width:250px;">
+        <video width="100%" height="360" controls>
+        <source src="video/VideoVisor7.mp4" type="video/mp4"></video>
         <p>Cada segmento de um visor de sete segmentos é ligado a um pino de controle. Quando um pino é ativado 
         (geralmente com nível lógico alto), o segmento correspondente se acende, formando um padrão que representa 
         um número ou uma letra.</p>
@@ -46,14 +40,8 @@ const works = {
         <p>Neste projeto, utilizamos um display LCD de 32 segmentos. Ele consiste em duas linhas de 16 caracteres cada, 
         totalizando 32 caracteres disponíveis para exibição de texto, números e símbolos. Cada caractere é formado por 
         uma matriz de pontos ou segmentos que podem ser ativados individualmente para exibir informações.</p>
-        <img src="img/ESP32off.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/ESP32welcome.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/ESP32count.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/ESP32count1.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/ESP32watch.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/ESP32watch1.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/ESP32erase.png" alt="Projeto de Automação Industrial" style="width:250px;">
-        <img src="img/ESP32erase1.png" alt="Projeto de Automação Industrial" style="width:250px;">
+        <video width="100%" height="360" controls>
+        <source src="video/VideoMenu.mp4" type="video/mp4"></video>
         <p>Utilizamos uma série de botões para realizar diferentes funções dentro do ESP 32. 
         <ul>
         <li>Botão verde: Confirmação.</li>
@@ -68,12 +56,12 @@ const works = {
         <p>Na opção de zerar os dados, se o usuário segurar o botão verde por 3 segundos, todos os dados serão zerados e se apertar o 
         vermelho, a operação será cancelada e o programa voltará para o menu.</p>
         
-        <h3>Para mais projeto acesse aqui:</h3>
+        <h3>Para mais projetos acesse aqui:</h3>
         <button class="btao" onclick="redirecionarAI('Automação Industrial')">GitHub</button>
         `
     },
     "Desenvolvimento WEB": {
-        title: "<h2>Desenvolvimento WEB</h2>",
+        title: "<h1>Desenvolvimento WEB</h1>",
         content: `
         <h4>Aqui irei apresentar alguns projetos feitos utilizando o JavaScript e o que eles fazem.</h4>
         <h1>Menu</h1>
@@ -125,27 +113,27 @@ const works = {
     const expressionElement = document.getElementById('expression');
     let expression = '';
         
-    function appendToDisplay(value) {
+function appendToDisplay(value) {
     display.value += value;
-    }
+}
         
-    function appendOperator(operator) {
+function appendOperator(operator) {
     expression += display.value + operator;
     expressionElement.innerText = expression;
     display.value = '';
-    }
+}
         
-    function clearDisplay() {
+function clearDisplay() {
     display.value = '';
     expression = '';
     expressionElement.innerText = '';
-    }
+}
         
-    function backspace() {
+function backspace() {
     display.value = display.value.slice(0, -1);
-    }
+}
         
-    function calculate() {
+function calculate() {
     expression += display.value;
     expressionElement.innerText = expression;
         
@@ -157,10 +145,9 @@ const works = {
     }
         
     expression = '';
-    }
+}
         
-    function evalExpression(expr) {
-                
+function evalExpression(expr) {          
     expr = expr.replace(/÷/g, '/')
         .replace(/x/g, '*')
         .replace(/√/g, 'Math.sqrt')
@@ -168,7 +155,7 @@ const works = {
         .replace(/%/g, '/100*');
         
         return Function('"use strict"; return (' + expr + ')')();
-        }
+}
         
     window.appendToDisplay = appendToDisplay;
     window.appendOperator = appendOperator;
@@ -269,21 +256,164 @@ function backHome() {
 
     },
     "Banco de Dados": {
-        title: "<h2>Banco de Dados</h2>",
+        title: "<h1>Banco de Dados</h1>",
         content: `
+        <h3>Banco de Dados Relacional</h3>
+        <h4>Diagrama Entidade Relacionamento</h4>
+        <img src="img/diagramaER.png" alt="gerador" style="width:500px;">
+        <h3>O que é uma entidade?</h3> Entidade é um objeto com características únicas, utilizados para representar itens
+        que guardam informações.</p>
+        <p>Exemplo: Em uma loja, as entidades seriam os clientes, os produtos e os compradores.</p>
+        <h3>O que são atributos?</h3> Atributos são as características de uma entidade.</p>
+        <p>Exemplo: os atributos seriam as informações de cada cliente(nome, contato e endereço).</p>
+        <h3>O que são relacionamentos?</h3> O relacionamento é a associação entre as entidades.</p>
+        <p>Exemplo: o relacionamento seria a ação do vendedor ou do cliente(compra ou vende).</p>
+        <h3>O que é uma cardinalidade?</h3> A cardinalidade indica o número de ocorrências de uma entidade que de relaciona
+        com uma única ocorrência de outras entidades.</p>
+        <p>Exemplo: a cardinalidade seria o número de compras para o cliente ou o número de clientes/vendas para o vendedor.</p>
+        <h3>O que são PRIMARY KEY e FOREIGN KEY?</h3>
+        <p>PRIMARY KEY: valor único e não ausente que representa cada item salvo no Banco de Dados.</p>
+        <p>FOREIGN KEY: é a *primary key* importada de outra entidade que estabelece relacionamento 
+        entre as entidades.</p>
 
+        <h2>Como criar tabelas e achar informações específicas?</h2>
+        Aqui irei apresentar como funciona a criação das tabelas em SQL utilizando o pgAdmin.
+
+        <h3>Criar Tabelas</h3>
+        <pre><code>CREATE TABLE (name) (
+        
+);    </code></pre>
+        Ordem de declaração das colunas:   nome_da_coluna,     tipo_de_dado,      restrições 
+        <h3>Alterar dados das Tabelas</h3>
+        <pre><code>ALTER TABLE (name) (
+        
+);    </code></pre>
+
+        <h3>Inserir dados dentro das tabelas</h3>
+        <pre><code>INSET INTO (name) (
+
+);    </code></pre>
+
+      <h3>Atualizar dados das tabelas</h3>
+      <pre><code>UPDATE (name) (columns) 
+VALUES  (valor);  --Adicionar dados com colunas faltantes  </code></pre> 
+
+      <h3>Deletar dados das tabelas</h3>
+      <pre><code>DELETE FROM (name) WHERE (row) = "n";</code></pre>
+
+      <h3>Visualizar dados específicos de uma tabela</h3>
+      <pre><code>SELECT (row) FROM (name);</code></pre>
+
+        <h2>Aqui irei apresentar alguns projetos e como funcionam:</h2>
+        <h3>Loja</h3>
+        Nesse projeto foi criada uma loja que vende produtos variados para escritório.
+        <pre><code>CREATE TABLE clients (
+    idclient SERIAL PRIMARY KEY,
+    cpf varchar(14),
+    firstname text,
+    lastname text,
+    address text        
+); </code></pre>
+        Nesse código, foi criado uma tabela com o nome "clients", contendo as informações dos clientes da loja,
+        que são: CPF, primeiro nome, último nome, e endereço.
+
+        <pre><code>CREATE TABLE products (
+    idproduct SERIAL PRIMARY KEY,
+    idclient int,
+    CONSTRAINT fk_client FOREIGN KEY (idclient) REFERENCES clients (idclient),
+    productname varchar(50),
+    brand varchar(20),
+    category varchar(20),
+    discount numeric,
+    price numeric
+);</code></pre>
+        Nesse código, foi criado uma tabela com o nome products, contendo as informações dos produtos a serem vendidos
+        na loja, que são: ID do produto, ID do cliente, nome do produto, marca do produto, categoria do produto, valor
+        do desconto e preço.
+
+        <pre><code>INSERT INTO clients (cpf,firstname,lastname,address) VALUES
+    ('000.000.000-00','Rodrigo','Junior','Rua 00, 000, Bairro 0'),
+    ('111.111.111-11','Joao','Silva','Rua 01, 100, Bairro 1'),
+    ('222.222.222-22','Maria','Gomez','Rua 02, 200, Bairro 2'),
+    ('333.333.333-33','José','Andrade','Rua 03, 300, Bairro 3'),
+    ('444.444.444-44','Bruno','Silveira','Rua 04, 400, Bairro 4'),
+    ('555.555.555-55','Ana','Cabral','Rua 05, 500, Bairro 5'),
+    ('666.666.666-66','Lucia','Silva','Rua 06, 600, Bairro 6'),
+    ('777.777.777-77','Antonio','Mange','Rua 07, 700, Bairro 7'),
+    ('888.888.888-88','Nicolas','Silva','Rua 08, 800, Bairro 8'),
+    ('999.999.999-99','Sandra','Fourlan','Rua 09, 900, Bairro 9');</code></pre>
+        Nesse código, ocorreu o preenchimento das informações dos clientes.
+
+        <pre></code>INSERT INTO products (idclient,productname,brand,category,discount,price) VALUES
+    (2,'Headset','jbl','eletronicos',0.1,195.89),
+    (1,'notebook','dell','eletronicos',0.12,3500.00),
+    (10,'cadeira gammer','dragon','imobiliario',0.0,1630.9),
+    (2,'mesa para computador','dragon','imobiliario',0.0,695.89),
+    (1,'mouse','dell','eletronicos',0.12,124.79),
+    (3,'prateleira',null,'imobiliario',0.0,80.9),
+    (5,'postit','faber castel','papelaria',0.02,5.29),
+    (8,'lapiseira','pentel','papelaria',0.02,18.9); </code></pre>
+        Nesse código, ocorreu o preenchimento das informações dos produtos.
         `
     },
     "Linguagem de Programação": {
-        title: "<h2>Linguagem de Programação</h2>",
+        title: "<h1>Linguagem de Programação</h1>",
         content: `
+        <p>Aqui irei apresentar alguns projetos realizados utilizando a linguagem Java. </p>
+        <h3>O que é a linguagem
+        de programação?</h3>
+        Uma linguagem de programação é um conjunto de instruções e regras que permite aos programadores 
+        comunicar-se com computadores para criar programas de software.
+
+        <h3>Projeto utilizando Variáveis, atribuições e operações matemáticas.</h3>
+        <p>Nesse projeto, foi criado um programa que encontra a equação do segundo grau a partir de suas raizes.
+        <video width="100%" height="360" controls>
+        <source src="video/VideoLista1.mp4" type="video/mp4"></video>
+
+        <h3>Projeto utilizando Estruturas de decisão</h3>
+        <p>Nesse projeto, foi criado um programa que recebe três números inseridos pelo usuário e em seguida os 
+        exibe em ordem crescente.
+        <video width="100%" height="360" controls>
+        <source src="video/VideoLista2.mp4" type="video/mp4"></video>
+
+        <h3>Projeto utilizando o Switch</h3>
+        <p>Nesse projeto, foi criado um programa que simula uma máquina de café, em que o usuário insere a quantidadade
+        de dinheiro, seleciona qual a opção desejada e em seguida recebe seu troco(se houver).
+        <video width="100%" height="360" controls>
+        <source src="video/VideoLista2pt1.mp4" type="video/mp4"></video>
+
+        <h3>Projeto utilizando estruturas de Repetição</h3>
+        <p>Nesse projeto, foi criado um programa que gera a sequência de Fibonacci até o termo do número inserido pelo
+        usuário. 
+        <video width="100%" height="360" controls>
+        <source src="video/VideoLista3.mp4" type="video/mp4"></video>
+
+        <h3>Projeto utilizando Vetores</h3>
+        <p>Nesse projeto, foi criado um programa que declara e calcula a determinante de uma matriz.
+        <video width="100%" height="360" controls>
+        <source src="video/VideoLista4.mp4" type="video/mp4"></video>
+
+        <h3>Projeto utilizando funções e recursividade</h3>
+        <p>Nesse projeto, foi criado um programa que recebe dois números do usuário e calcula a potência de um número pelo outro 
+        (utilizando funções).
+        <video width="100%" height="360" controls>
+        <source src="video/VideoLista5func.mp4" type="video/mp4"></video>
+        <p>Nesse projeto, foi criado um programa que recebe dois números do usuário e calcula a potência de um número pelo outro 
+        (utilizando recursividade).
+        <video width="100%" height="360" controls>
+        <source src="video/VideoLista5rec.mp4" type="video/mp4"></video>
+
+        <h2>Projeto utilizando Orientação Orientada a Objeto</h2>
+
+       
+        <button class="btao" onclick="redirecionarLP('Linguagem de Programação')">GitHub</button>
 
         `
     },
     "Ciência de Dados": {
         title: "<h2>Ciência de Dados</h2>",
         content: `
-
+        <button class="botao" onclick="redirecionarCD('Ciência de Dados')">GoogleColab</button>
         `
     }
 };
@@ -296,6 +426,13 @@ function redirecionarAI() {
     window.open("https://github.com/BrunoSakamoto/Listas/tree/main/ATV%20-%20Arduino", "_blank")
 }
 
+function redirecionarLP() {
+    window.open("https://github.com/BrunoSakamoto/Listas/tree/main/Listas", "_blank")
+}
+
+function redirecionarCD() {
+    window.open("https://colab.research.google.com/drive/1DSDHaqPH5K9PzjsscIMFAnFJc6dpIEHc#scrollTo=owo9SFXWEAFo", "_blank")
+}
 
 function showContent(section) {
     const modal = document.getElementById('modal');

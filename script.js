@@ -260,21 +260,23 @@ function backHome() {
         content: `
         <h3>Banco de Dados Relacional</h3>
         <h4>Diagrama Entidade Relacionamento</h4>
-        <img src="img/diagramaER.png" alt="gerador" style="width:500px;">
-        <h3>O que é uma entidade?</h3> Entidade é um objeto com características únicas, utilizados para representar itens
-        que guardam informações.</p>
-        <p>Exemplo: Em uma loja, as entidades seriam os clientes, os produtos e os compradores.</p>
-        <h3>O que são atributos?</h3> Atributos são as características de uma entidade.</p>
-        <p>Exemplo: os atributos seriam as informações de cada cliente(nome, contato e endereço).</p>
-        <h3>O que são relacionamentos?</h3> O relacionamento é a associação entre as entidades.</p>
-        <p>Exemplo: o relacionamento seria a ação do vendedor ou do cliente(compra ou vende).</p>
-        <h3>O que é uma cardinalidade?</h3> A cardinalidade indica o número de ocorrências de uma entidade que de relaciona
-        com uma única ocorrência de outras entidades.</p>
-        <p>Exemplo: a cardinalidade seria o número de compras para o cliente ou o número de clientes/vendas para o vendedor.</p>
-        <h3>O que são PRIMARY KEY e FOREIGN KEY?</h3>
-        <p>PRIMARY KEY: valor único e não ausente que representa cada item salvo no Banco de Dados.</p>
-        <p>FOREIGN KEY: é a *primary key* importada de outra entidade que estabelece relacionamento 
-        entre as entidades.</p>
+        
+        <pre><code>
+        /
+        /
+        /
+        /
+        /
+        /
+        /
+        /
+        /
+        /
+        /
+        /
+        /
+        /
+        </code></pre>
 
         <h2>Como criar tabelas e achar informações específicas?</h2>
         Aqui irei apresentar como funciona a criação das tabelas em SQL utilizando o pgAdmin.

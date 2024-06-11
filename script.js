@@ -253,109 +253,36 @@ function backHome() {
 <button class="btao" onclick="menu()">Menu</button>
 `
 
-
     },
     "Banco de Dados": {
         title: "<h1>Banco de Dados</h1>",
         content: `
+        <h2>Sistema Educacional</h2>
+        <h3>Diagrama Entidade Relacionamento</h3>
+        <img src="img/DERSE.png" alt="DER" style="width:99%;" >
+        <p>Nesse diagrama, foi projetado como funcionaria as relações de uma Universidade.</p>
         <h3>Banco de Dados Relacional</h3>
-        <h4>Diagrama Entidade Relacionamento</h4>
-        
-        <pre><code>
-        /
-        /
-        /
-        /
-        /
-        /
-        /
-        /
-        /
-        /
-        /
-        /
-        /
-        /
-        </code></pre>
+        <p>Aqui utilizamos:</p>
+        <pre><code>SELECT * FROM alunos</code></pre> 
+        <p>para encontrar todos os alunos que estão matriculados nessa universidade. Em que o "SELECT" se refere a uma coluna específica
+        e o "FROM" a uma tabela específica.</p>
+        <img src="img/alunoBD.png" alt="alunos" style="width: 99%;">
+        <p>______________________________________________________________________________</p>
+        <p>Aqui, utilizamos:
+        <pre><code>SELECT nome_curso FROM cursos WHERE id_curso ='1'</code></pre>
+        <p>para encontrar uma informação específica. Neste exemplo, utilizei o id do curso como método de filtro para aparecer somente
+        o curso em específico do ID</p> 
+        <img src="img/medic.png" alt="medic" style="width: 99%;">
+        <p>______________________________________________________________________________</p>
+        <p>Aqui, utilizamos:
+        <pre><code>SELECT alunos.nome_aluno, matriculas.status FROM alunos 
+FULL JOIN matriculas ON alunos.cpf = matriculas.cpf
+WHERE matriculas.status = 'Formado'</code></pre>
+        <p>para juntar duas tabelas e assim encontrar um informação específica. Nesse caso, usamos o status da matrícula para saber quais 
+        alunos estavam formados.
+        <img src="img/formados.png" alt="form" style="width: 99%;">
 
-        <h2>Como criar tabelas e achar informações específicas?</h2>
-        Aqui irei apresentar como funciona a criação das tabelas em SQL utilizando o pgAdmin.
 
-        <h3>Criar Tabelas</h3>
-        <pre><code>CREATE TABLE (name) (
-        
-);    </code></pre>
-        Ordem de declaração das colunas:   nome_da_coluna,     tipo_de_dado,      restrições 
-        <h3>Alterar dados das Tabelas</h3>
-        <pre><code>ALTER TABLE (name) (
-        
-);    </code></pre>
-
-        <h3>Inserir dados dentro das tabelas</h3>
-        <pre><code>INSET INTO (name) (
-
-);    </code></pre>
-
-      <h3>Atualizar dados das tabelas</h3>
-      <pre><code>UPDATE (name) (columns) 
-VALUES  (valor);  --Adicionar dados com colunas faltantes  </code></pre> 
-
-      <h3>Deletar dados das tabelas</h3>
-      <pre><code>DELETE FROM (name) WHERE (row) = "n";</code></pre>
-
-      <h3>Visualizar dados específicos de uma tabela</h3>
-      <pre><code>SELECT (row) FROM (name);</code></pre>
-
-        <h2>Aqui irei apresentar alguns projetos e como funcionam:</h2>
-        <h3>Loja</h3>
-        Nesse projeto foi criada uma loja que vende produtos variados para escritório.
-        <pre><code>CREATE TABLE clients (
-    idclient SERIAL PRIMARY KEY,
-    cpf varchar(14),
-    firstname text,
-    lastname text,
-    address text        
-); </code></pre>
-        Nesse código, foi criado uma tabela com o nome "clients", contendo as informações dos clientes da loja,
-        que são: CPF, primeiro nome, último nome, e endereço.
-
-        <pre><code>CREATE TABLE products (
-    idproduct SERIAL PRIMARY KEY,
-    idclient int,
-    CONSTRAINT fk_client FOREIGN KEY (idclient) REFERENCES clients (idclient),
-    productname varchar(50),
-    brand varchar(20),
-    category varchar(20),
-    discount numeric,
-    price numeric
-);</code></pre>
-        Nesse código, foi criado uma tabela com o nome products, contendo as informações dos produtos a serem vendidos
-        na loja, que são: ID do produto, ID do cliente, nome do produto, marca do produto, categoria do produto, valor
-        do desconto e preço.
-
-        <pre><code>INSERT INTO clients (cpf,firstname,lastname,address) VALUES
-    ('000.000.000-00','Rodrigo','Junior','Rua 00, 000, Bairro 0'),
-    ('111.111.111-11','Joao','Silva','Rua 01, 100, Bairro 1'),
-    ('222.222.222-22','Maria','Gomez','Rua 02, 200, Bairro 2'),
-    ('333.333.333-33','José','Andrade','Rua 03, 300, Bairro 3'),
-    ('444.444.444-44','Bruno','Silveira','Rua 04, 400, Bairro 4'),
-    ('555.555.555-55','Ana','Cabral','Rua 05, 500, Bairro 5'),
-    ('666.666.666-66','Lucia','Silva','Rua 06, 600, Bairro 6'),
-    ('777.777.777-77','Antonio','Mange','Rua 07, 700, Bairro 7'),
-    ('888.888.888-88','Nicolas','Silva','Rua 08, 800, Bairro 8'),
-    ('999.999.999-99','Sandra','Fourlan','Rua 09, 900, Bairro 9');</code></pre>
-        Nesse código, ocorreu o preenchimento das informações dos clientes.
-
-        <pre></code>INSERT INTO products (idclient,productname,brand,category,discount,price) VALUES
-    (2,'Headset','jbl','eletronicos',0.1,195.89),
-    (1,'notebook','dell','eletronicos',0.12,3500.00),
-    (10,'cadeira gammer','dragon','imobiliario',0.0,1630.9),
-    (2,'mesa para computador','dragon','imobiliario',0.0,695.89),
-    (1,'mouse','dell','eletronicos',0.12,124.79),
-    (3,'prateleira',null,'imobiliario',0.0,80.9),
-    (5,'postit','faber castel','papelaria',0.02,5.29),
-    (8,'lapiseira','pentel','papelaria',0.02,18.9); </code></pre>
-        Nesse código, ocorreu o preenchimento das informações dos produtos.
         `
     },
     "Linguagem de Programação": {
@@ -419,7 +346,7 @@ VALUES  (valor);  --Adicionar dados com colunas faltantes  </code></pre>
         `
     }
 };
-
+//Funções para redirecionar para um site ao clicar-----------------------------------------------------------------------
 function redirecionar() {
     window.open("https://github.com/BrunoSakamoto", "_blank");
 }
@@ -435,7 +362,9 @@ function redirecionarLP() {
 function redirecionarCD() {
     window.open("https://colab.research.google.com/drive/1DSDHaqPH5K9PzjsscIMFAnFJc6dpIEHc#scrollTo=owo9SFXWEAFo", "_blank")
 }
+//-------------------------------------------------------------------------------------------------------------------------
 
+//
 function showContent(section) {
     const modal = document.getElementById('modal');
     const modalBody = document.getElementById('modal-body');
@@ -460,7 +389,10 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+//---------------------------------------------------------------------------------------------------------------------------
 
+//Função para direcionar a tela para um outro html dentro do mesmo arquuivo--------------------------------------------------
 function menu() {
     window.location.href = "menu.html"
 }
+//---------------------------------------------------------------------------------------------------------------------------

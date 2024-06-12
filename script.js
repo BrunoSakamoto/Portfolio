@@ -289,6 +289,9 @@ function backHome() {
 </ul>
 
 <p>______________________________________________________________________________</p>
+<h1>Projeto de árvore DOM(Document Object Model)</h1>
+
+<p>______________________________________________________________________________</p>
 <h1>Gerador de JavaScript</h1>
 <h4>Esse projeto calcula o valor do INSS e o IRRF a partir do salário aplicado.</h4>
 <img src="img/geradorJS.png" alt="gerador" style="width:500px;">

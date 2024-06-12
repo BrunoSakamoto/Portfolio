@@ -1,13 +1,100 @@
-.casa {
-    display: flex;
-    
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #000000;
+/* Resetando margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Cor de fundo azul claro */
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilizando a div de volta à home */
+.home {
+    margin-bottom: 20px;
+}
+
+.home .casa {
+    background-color: #1e90ff; /* Azul do botão */
     color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.home .casa:hover {
+    background-color: #1c86ee; /* Azul um pouco mais escuro ao hover */
+}
+
+/* Estilizando a seção de adicionar times */
+.AdicionarTimes {
+    background-color: #4682b4; /* Azul da seção */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.AdicionarTimes h1,
+.AdicionarTimes h4 {
+    margin-bottom: 15px;
+}
+
+.Digitartextos {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilizando os botões */
+#addButton,
+#editButton,
+#removeButton {
+    background-color: #1e90ff; /* Azul dos botões */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#addButton:hover,
+#editButton:hover,
+#removeButton:hover {
+    background-color: #1c86ee; /* Azul um pouco mais escuro ao hover */
+}
+
+/* Estilizando a tabela */
+#tabelaTimes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabelaTimes th,
+#tabelaTimes td {
+    border: 1px solid #4682b4;
+    padding: 10px;
+    text-align: center;
+}
+
+#tabelaTimes thead {
+    background-color: #1e90ff; /* Azul do cabeçalho da tabela */
+    color: white;
+}
+
+#tabelaTimes tbody tr:nth-child(even) {
+    background-color: #f0f8ff; /* Fundo alternado para as linhas pares */
 }

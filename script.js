@@ -494,8 +494,8 @@ window.onclick = function(event) {
 }
 //---------------------------------------------------------------------------------------------------------------------------
 
-//Função para direcionar a tela para um outro html dentro do mesmo arquuivo--------------------------------------------------
+//Função para direcionar a tela para um outro html dentro do mesmo arquivo--------------------------------------------------
 function menu() {
-    window.location.href = "menu.html"
+    window.location.href = "org/menu.html"
 }
 //---------------------------------------------------------------------------------------------------------------------------

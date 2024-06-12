@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 545px;
+}
+
+.menu-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.menu-button:hover {
+  background-color: #2980b9;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}

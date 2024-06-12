@@ -18,6 +18,10 @@ function inss() {
     window.location.href = "inss.html"
 }
 
+function dom() {
+    window.location.href = "dom.html"
+}
+
 function gerador() {
     window.location.href = "gerador.html"
 }

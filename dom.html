@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+
+<body>
+    <div class="home" onclick="backHome()">
+        <button class="casa">Voltar</button>
+    </div>
+    <div class="AdicionarTimes">
+        <h1>Formulário: Times</h1>
+        <h4>Insira os Times</h4>
+        <input class="Digitartextos" type="text" placeholder="Digite aqui">
+        <input class="Digitartextos" type="text" placeholder="Digite aqui">
+        <input class="Digitartextos" type="text" placeholder="Digite aqui">
+        <button id="addButton">Add</button>
+        <button id="editButton">Editar</button>
+        <button id="removeButton">Remover</button>
+    </div>
+
+    <table id="tabelaTimes" >
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Time 1</th>
+                <th>Time 2</th>
+                <th>Time 3</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script src="dom.js" defer></script>
+</body>
+
+</html>

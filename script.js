@@ -10,6 +10,7 @@ const works = {
         <p>Os leds da esquerda (verde e vermelho) representam o semáforo para pedestres e o botão é utilizado para
         diminuir o tempo em que a luz verde para os carros ficará acesa, assim possibilitando a travessia dos
         pedestres.</p>
+        <p>______________________________________________________________________________</p>
         <h3>Buzzer</h3>
         <p>Na automação industrial e projetos de eletrônica, o uso de sensores e atuadores é fundamental. 
         Um exemplo comum é o uso de um fotoresistor (sensor de luz) juntamente com um buzzer (atuador sonoro).
@@ -17,6 +18,7 @@ const works = {
         <source src="video/VideoBuzzer.mp4" type="video/mp4"></video>
         <p>Neste projeto, integramos esses componentes para criar um sistema onde o buzzer toca quando o nível 
         de luz detectado pelo fotoresistor atinge um determinado valor.</p>
+        <p>______________________________________________________________________________</p>
         <h3>Potenciômetro</h3>
         <p>O potenciômetro é um componente eletrônico que permite variar a resistência elétrica de forma controlada, 
         geralmente girando um botão ou um eixo. No contexto do Arduino, o potenciômetro é comumente utilizado para 
@@ -27,6 +29,7 @@ const works = {
         variável que pode ser ajustada manualmente pelo usuário. O Arduino lê a resistência medida pelo potenciômetro 
         através de uma de suas portas analógicas. Com base nessa leitura analógica, o Arduino calcula um valor proporcional 
         que representa a intensidade desejada para o LED.</p>
+        <p>______________________________________________________________________________</p>
         <h3>Visor de Sete Segmentos</h3>
         <p>Um visor de sete segmentos é um componente eletrônico comum usado para exibir números, letras e alguns caracteres 
         especiais de forma simplificada. Esses segmentos são chamados de "a", "b", "c", "d", "e", "f" e "g" e, quando são 
@@ -36,6 +39,7 @@ const works = {
         <p>Cada segmento de um visor de sete segmentos é ligado a um pino de controle. Quando um pino é ativado 
         (geralmente com nível lógico alto), o segmento correspondente se acende, formando um padrão que representa 
         um número ou uma letra.</p>
+        <p>______________________________________________________________________________</p>
         <h3>Microcontrolador ESP 32</h3>
         <p>Neste projeto, utilizamos um display LCD de 32 segmentos. Ele consiste em duas linhas de 16 caracteres cada, 
         totalizando 32 caracteres disponíveis para exibição de texto, números e símbolos. Cada caractere é formado por 
@@ -296,42 +300,63 @@ WHERE matriculas.status = 'Formado'</code></pre>
 
         <h3>Projeto utilizando Variáveis, atribuições e operações matemáticas.</h3>
         <p>Nesse projeto, foi criado um programa que encontra a equação do segundo grau a partir de suas raizes.
+        <p>Nessa lógica, foram criadas 5 variáveis: a, b, c, x1 e x2. Dentro das variáveis: a, b e c, são implementados os cálculos de
+        uma equação do segundo grau de forma inversa, estabelecendo os calculos a partir de suas raizes.</p>
         <video width="100%" height="360" controls>
         <source src="video/VideoLista1.mp4" type="video/mp4"></video>
-
+        <p>______________________________________________________________________________</p>
         <h3>Projeto utilizando Estruturas de decisão</h3>
         <p>Nesse projeto, foi criado um programa que recebe três números inseridos pelo usuário e em seguida os 
         exibe em ordem crescente.
+        <p>
+        Foram criadas quatro variáveis: maior, meio, menor e aux. Foram utilizados três blocos de instruções, que precisam que suas
+        condições sejam verdadeiras para serem executadas. 
+        Nesse caso, as condições servem para verificar se quais variáveis são maiores e menores. Assim que forem verificados, os valores
+        serão trocados garantindo que uma variável seja menor ou maior que outra e logo em seguida, imprimí-las em ordem crescente.
+        <p>
         <video width="100%" height="360" controls>
-        <source src="video/VideoLista2.mp4" type="video/mp4"></video>
-
+        <source src="video/VideoLista2pt1.mp4" type="video/mp4"></video>
+        <p>______________________________________________________________________________</p>
         <h3>Projeto utilizando o Switch</h3>
         <p>Nesse projeto, foi criado um programa que simula uma máquina de café, em que o usuário insere a quantidadade
         de dinheiro, seleciona qual a opção desejada e em seguida recebe seu troco(se houver).
+        <p>Nesse código foi utilizado uma estrutura de decisão utilizando o "Switch" e "Case". o Switch permite que sejam criados vários
+        "caminhos", que possuem diferentes instruções dentro de cada um. Dentro do case é implementado um código, portanto, assim que um
+        valor é selecionado, o código de dentro é executado.
         <video width="100%" height="360" controls>
-        <source src="video/VideoLista2pt1.mp4" type="video/mp4"></video>
-
+        <source src="video/VideoLista2.mp4" type="video/mp4"></video>
+        <p>______________________________________________________________________________</p>
         <h3>Projeto utilizando estruturas de Repetição</h3>
         <p>Nesse projeto, foi criado um programa que gera a sequência de Fibonacci até o termo do número inserido pelo
         usuário. 
+        <p>Nesse código, foi implementada uma estrutura de repetição, que irá executar um bloco de instruções enquanto a condição for 
+        verdadeira.
         <video width="100%" height="360" controls>
         <source src="video/VideoLista3.mp4" type="video/mp4"></video>
-
+        <p>______________________________________________________________________________</p>
         <h3>Projeto utilizando Vetores</h3>
         <p>Nesse projeto, foi criado um programa que declara e calcula a determinante de uma matriz.
+        <p>A matriz é um vetor bidimensional que armazena valores. Para percorrer os valores das diagonais, são usados índices específicos
+        que percorrem os vetores internos da matriz.
+        <p>O valor da determinante é encontrado ao fazer o produto das diagonais, utilizando os vetores e a manipulação de índices para 
+        realizar os cálculos.
+        <p>
         <video width="100%" height="360" controls>
         <source src="video/VideoLista4.mp4" type="video/mp4"></video>
-
+        <p>______________________________________________________________________________</p>
         <h3>Projeto utilizando funções e recursividade</h3>
         <p>Nesse projeto, foi criado um programa que recebe dois números do usuário e calcula a potência de um número pelo outro 
         (utilizando funções).
+        <p>Nesse código, foi criada uma função chamada "calcularPotencia" com um bloco de instruções dentro. Então a função é chamada dentro 
+        do método "Main", fazendo com que as instruções sejam "pescadas" da função para o método principal.
+        <p>
         <video width="100%" height="360" controls>
         <source src="video/VideoLista5func.mp4" type="video/mp4"></video>
-        <p>Nesse projeto, foi criado um programa que recebe dois números do usuário e calcula a potência de um número pelo outro 
-        (utilizando recursividade).
+        <p>Nesse projeto, foi criado um programa que recebe dois números do usuário e calcula a potência de um número pelo outro (utilizando recursividade).
+        <p>Nesse caso, a recursividade é utilizada para dividir o problema principal em subproblemas menores
         <video width="100%" height="360" controls>
         <source src="video/VideoLista5rec.mp4" type="video/mp4"></video>
-
+        <p>______________________________________________________________________________</p>
         <h2>Projeto utilizando Orientação Orientada a Objeto</h2>
 
        
@@ -364,7 +389,7 @@ function redirecionarCD() {
 }
 //-------------------------------------------------------------------------------------------------------------------------
 
-//
+//Funções para abrir os conteúdos
 function showContent(section) {
     const modal = document.getElementById('modal');
     const modalBody = document.getElementById('modal-body');
@@ -372,7 +397,9 @@ function showContent(section) {
     modalBody.innerHTML = title + content;
     modal.style.display = "block";
 }
+//-------------------------------------------------------------------------------------------------------------------------
 
+//Função para fechar conteúdos
 function closeModal() {
     const modal = document.getElementById('modal');
     modal.style.display = "none";
@@ -382,6 +409,7 @@ const closeBtn = document.getElementsByClassName("close")[0];
 closeBtn.onclick = function() {
     closeModal();
 }
+//-------------------------------------------------------------------------------------------------------------------------
 
 window.onclick = function(event) {
     const modal = document.getElementById('modal');

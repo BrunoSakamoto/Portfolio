@@ -72,43 +72,31 @@ const works = {
         <p>Nesse projeto utilizei o JavaScript para produzir um menu lateral que contém 3 projetos que realizei
         no decorrer do semestre, sendo eles: Calculadora(padrão), calculadora de INSS e IRRF e um gerador de JavaScript,
         utilizando diferentes funções para o funcionamento do menu e de cada programa.</p>
-        <img src="img/menu.png" alt="caluladora" style="width:500px;">
+        <img src="img/menu.png" alt="caluladora" style="width:600px;">
         <h3>Código para o funcionamento do MENU</h3>
-        <pre><code>document.getElementById('option1').addEventListener('click', function() {
-  
-        });
+        <pre><code>function calculadora() {
+    window.location.href = "calculadora.html"
+}
         
-        document.getElementById('option2').addEventListener('click', function() {
-          
-        });
+function inss() {
+    window.location.href = "inss.html"
+}
         
-        document.getElementById('option3').addEventListener('click', function() {
-          
-        });
+function gerador() {
+    window.location.href = "gerador.html"
+}
         
-        function calculadora() {
-            window.location.href = "calculadora.html"
-        }
-        
-        function inss() {
-            window.location.href = "inss.html"
-        }
-        
-        function gerador() {
-            window.location.href = "gerador.html"
-        }
-        
-        function Home() {
-            window.location.href = "index.html" 
-        }
-        </code></pre>
+function Home() {
+    window.location.href = "index.html" 
+}
+</code></pre>
         <h3>O que cada função faz: </h3
     <ul> 
     <li>document.getElementById: Este método retorna uma referência ao elemento HTML que tem o atributo id especificado. </li>
     <li>addEventListener: Este método adiciona um ouvinte de evento ao elemento selecionado. Um ouvinte de evento é uma função que é chamada quando o evento especificado ocorre. </li>
     <li>window.location.href: Este método permite obter ou definir a URL da página atual. Esta propriedade é muito útil para redirecionar o usuário para uma nova página ou para obter a URL da página atual. .</li>
     </ul>  
-
+    <p>______________________________________________________________________________</p>
     <h1>Calculadora</h1>
     <img src="img/calculadora.png" alt="caluladora" style="width:500px;">
         <h3>Código para funcionamento da Calculadora:</h3>
@@ -174,16 +162,57 @@ function evalExpression(expr) {
         </code></pre>
 
     <h3>O que cada função faz: </h3
+    <h3>Variáveis globais</h3>
+
     <ul> 
-    <li>appendToDisplay: Adiciona números ou caracteres ao display.</li>
-    <li>appendOperator: Adiciona operadores à expressão e limpa o display.</li>
-    <li>clearDisplay: Limpa o display e a expressão.</li>
-    <li>backspace: Remove o último caractere do display.</li>
-    <li>calculate: Calcula a expressão completa e exibe o resultado.</li>
-    <li>evalExpression: Transforma a expressão em um formato computável e a avalia.</li>
-    <li>backHome: Redireciona para a página inicial.</li>
+    <li>display: Referência ao elemento de exibição principal da calculadora onde os números e resultados são mostrados.</li>
+    <li>expressionElement: Referência ao elemento que exibe a expressão matemática completa.</li>
+    <li>expression: String que armazena a expressão matemática atual.</li>
+    </ul>
+
+    <h3>appendToDisplay(value)</h3>
+    <ul>
+    <li>value: O número ou símbolo a ser adicionado ao display.</li>
+    </ul>
+
+    <h3>appendOperator(operator)</h3>
+    <ul>
+    <li>operator: O operador matemático a ser adicionado (e.g., '+', '-', 'x').</li>
+    </ul>
+
+    <h3>clearDisplay()</h3>
+    <ul>
+    <li>Reseta os valores de display e expression para strings vazias.</li>
+    </ul>
+
+    <h3>backspace()</h3>
+    <ul>
+    <li>Remove o último caractere do display.</li>
+    <li>Utiliza slice para truncar a string.</li>
     </ul>   
-    
+
+    <h3>calculate()</h3>
+    <ul>
+    <li>Concatena o valor atual do display à expressão.</li>
+    <li>Atualiza a exibição da expressão completa.</li>
+    <li>Avalia a expressão utilizando evalExpression.</li>
+    <li>Se a avaliação for bem-sucedida, mostra o resultado no display. Caso contrário, exibe "Erro".</li>
+    <li>Reseta a expressão após a avaliação.</li>
+    </ul>
+
+    <h3>evalExpression(expr)</h3>
+    <ul>
+    <li>Substitui símbolos específicos por operadores JavaScript equivalentes.</li>
+    <li>÷ para /</li>
+    <li>x para *</li>
+    <li>√ para Math.sqrt</li>
+    <li>^ para ** (exponenciação)</li>
+    <li>% para /100* (para calcular porcentagens)</li>
+    <li>Utiliza a função Function para avaliar a expressão em um contexto seguro.</li>
+    <li>Retorna o resultado da avaliação.</li>
+    </ul>
+
+    <p>______________________________________________________________________________</p>
     <h1>Calculadora INSS e IRRF</h1>
     <img src="img/calcINSS.png" alt="caluladora" style="width:400px;">
     <h3>Código para funcionamento da calculadora:</h3>
@@ -234,25 +263,53 @@ function calcularIRRF(salario, dependentes) {
 function backHome() {
     window.location.href = "menu.html" 
 }</code></pre>
+
 <h3>O que cada função faz: </h3>
+
+<h3>calcular()</h3> 
 <ul>
-<li>calcular(): Função principal que coleta dados de entrada, chama funções de cálculo e exibe os resultados.</li>
-<li>calcularINSS(salario): Calcula o valor do INSS com base no salário.</li>
-<li>calcularIRRF(salario, dependentes): Calcula o valor do IRRF com base no salário e no número de dependentes.</li>
-<li>backHome(): Redireciona o usuário para a página "menu.html".</li>
+<li>Obtém o valor do salário e o número de dependentes a partir dos elementos HTML.</li>
+<li>Chama as funções calcularINSS e calcularIRRF para calcular o valor do INSS e do IRRF, respectivamente.</li>
+<li>Formata os resultados em uma string HTML.</li>
+<li>Atualiza o elemento HTML resultado com os resultados calculados.</li>
 </ul>
 
+<h3>calcularINSS(salario)</h3>
+<ul>
+<li>Calcula o valor do INSS com base no salário informado.</li>
+<li>Aplica as alíquotas e faixas de contribuição de acordo com a legislação atual do INSS.</li>
+<li>Retorna o valor do INSS calculado.</li></li>
+</ul>
+
+<h3>calcularIRRF(salario, dependentes)</h3>
+<ul>
+<li>Calcula o valor do IRRF com base no salário informado e no número de dependentes.</li>
+<li>Deduz o valor da parcela a deduzir do imposto conforme a legislação do IRRF.</li>
+<li>Retorna o valor do IRRF calculado.</li>
+</ul>
+
+<p>______________________________________________________________________________</p>
 <h1>Gerador de JavaScript</h1>
 <h4>Esse projeto calcula o valor do INSS e o IRRF a partir do salário aplicado.</h4>
 <img src="img/geradorJS.png" alt="gerador" style="width:500px;">
 <h3>Código para funcionamento do gerador:</h3>
 <img src="img/geradorcode.png" alt="gerador" style="width:500px;">
 <h3>O que cada função faz: </h3>
+<h3>updateOutput()</h3>
 <ul> 
-<li>updateOutput: Atualiza a visualização de um código HTML, CSS e JavaScript fornecido pelo usuário em um iframe.</li>
-<li>Eventos de entrada: Disparam a função updateOutput sempre que o conteúdo dos campos de entrada (HTML, CSS, JS) for alterado.</li>
-<li>backHome: Redireciona o usuário para a página "menu.html".</li>
+<li>Esta função é chamada sempre que o conteúdo de uma das áreas de entrada (HTML, CSS ou JavaScript) é alterado.</li>
+<li>Ela obtém o código HTML, CSS e JavaScript inserido pelo usuário nos campos de entrada.</li>
+<li>Cria um elemento "iframe" para exibir a saída.</li>
+<li>Escreve o conteúdo HTML completo dentro do "iframe", incluindo o código HTML, CSS e JavaScript inserido pelo usuário.</li>
+<li>O JavaScript é incluído dentro da tag "script" no final do corpo do documento HTML.</li>
+<li>A saída atualizada é exibida no elemento com o ID code-output.</li>
+</ul>
+
+<h3>Eventos de entrada</h3>
+<ul>
+<li>Disparam a função updateOutput sempre que o conteúdo dos campos de entrada (HTML, CSS, JS) for alterado.</li>
 </ul> 
+<p>______________________________________________________________________________</p>
 <h3>Aqui você terá acesso ao funcionamento desse projeto:</h3>
 <button class="btao" onclick="menu()">Menu</button>
 `
@@ -353,13 +410,31 @@ WHERE matriculas.status = 'Formado'</code></pre>
         <video width="100%" height="360" controls>
         <source src="video/VideoLista5func.mp4" type="video/mp4"></video>
         <p>Nesse projeto, foi criado um programa que recebe dois números do usuário e calcula a potência de um número pelo outro (utilizando recursividade).
-        <p>Nesse caso, a recursividade é utilizada para dividir o problema principal em subproblemas menores
+        <p>Nesse caso, a recursividade é utilizada para dividir o problema principal em subproblemas menores até que
+        uma condição base seja atingida. Assim, as subsoluções são alinhadas para resolver o problema principal.
+        <p>
         <video width="100%" height="360" controls>
         <source src="video/VideoLista5rec.mp4" type="video/mp4"></video>
         <p>______________________________________________________________________________</p>
-        <h2>Projeto utilizando Orientação Orientada a Objeto</h2>
+        <h2>Projeto utilizando Programação Orientada a Objeto</h2>
+        <p>A Programação Orientada a Objetos é um paradigma que facilita a criação de software robusto, 
+        reutilizável e fácil de manter. Em Java, a POO é aplicada através do uso de classes, objetos, herança, 
+        interfaces e outros conceitos que permitem modelar problemas de forma eficaz e eficiente.
+        <p>
+        <p>Nesse programa, a classe "Personagem" define as propriedades e comportamentos de um personagem na batalha.
+        <p>A classe Main contém o método principal que gerencia a batalha entre dois personagens.
+        <ul> 
+        <li>O código cria dois personagens com nomes, vida, ataque, e defesa.</li>
+        <li>Simula uma batalha em turnos onde cada personagem ataca o outro até que a vida de um deles chegue a zero.</li>
+        <li>Após cada rodada, o estado dos personagens é impresso.</li>
+        <li>Quando a batalha termina, o vencedor é declarado.</li>
+        </ul>
+        <video width="100%" height="360" controls>
+        
+        <source src="video/videoPOO.mp4" type="video/mp4"></video>
 
-       
+        <p>______________________________________________________________________________</p>
+        <h3>Para acessar todos os projetos, navegue pelo botão abaixo.</h3>
         <button class="btao" onclick="redirecionarLP('Linguagem de Programação')">GitHub</button>
 
         `

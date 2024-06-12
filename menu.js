@@ -1,15 +1,4 @@
-document.getElementById('option1').addEventListener('click', function() {
-  
-});
-
-document.getElementById('option2').addEventListener('click', function() {
-  
-});
-
-document.getElementById('option3').addEventListener('click', function() {
-  
-});
-
+// Essas funções redirecionam a página principal para os arquivos dentro da pasta
 function calculadora() {
     window.location.href = "calculadora.html"
 }

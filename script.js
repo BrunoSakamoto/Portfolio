@@ -433,7 +433,7 @@ WHERE matriculas.status = 'Formado'</code></pre>
         <h1>Banco de Dados NoSQL</h1>
         <p>É uma categoria de sistema de gerenciamento de banco de dados projetados para lidar com grandes volumes de
         dados distribuídos e oferecer flexibilidade no armazenamento de dados.
-        <h3>Vantangens dos Bancos de Dados NoSQL</h3>
+        <h3><span class="cor2">Vantangens</span> dos Bancos de Dados NoSQL</h3>
         <ul>
         <li>Desempenho e Escalabilidade: Capacidade de lidar com grandes volumes de dados e alta demanda de leitura/escrita, escalando horizontalmente.</li>
         <li>Flexibilidade: Suporte a dados semi-estruturados e não estruturados, permitindo mudanças rápidas no esquema dos dados.</li>
@@ -441,7 +441,7 @@ WHERE matriculas.status = 'Formado'</code></pre>
         <li>Desenvolvimento Ágil: Adequados para desenvolvimento ágil e rápido, onde os requisitos de dados podem evoluir rapidamente.</li>
         </ul>
 
-        <h3>Desvantagens dos Bancos de Dados NoSQL</h3>
+        <h3><span class="cor1">Desvantagens</span> dos Bancos de Dados NoSQL</h3>
         <ul>
         <li>Consistência Eventual: Muitos bancos de dados NoSQL adotam o modelo de consistência eventual, o que pode ser uma desvantagem para aplicações que exigem consistência imediata.</li>
         <li>Complexidade: Gerenciamento de um sistema distribuído pode ser complexo e exigir conhecimento especializado.</li>
@@ -476,6 +476,7 @@ WHERE matriculas.status = 'Formado'</code></pre>
         <p>Nesse projeto, foi criado um programa que encontra a equação do segundo grau a partir de suas raizes.
         <p>Nessa lógica, foram criadas 5 variáveis: a, b, c, x1 e x2. Dentro das variáveis: a, b e c, são implementados os cálculos de
         uma equação do segundo grau de forma inversa, estabelecendo os calculos a partir de suas raizes.</p>
+        <p>
         <video width="100%" height="360" controls>
         <source src="video/VideoLista1.mp4" type="video/mp4"></video>
         <p>______________________________________________________________________________</p>
@@ -497,6 +498,7 @@ WHERE matriculas.status = 'Formado'</code></pre>
         <p>Nesse código foi utilizado uma estrutura de decisão utilizando o "Switch" e "Case". o Switch permite que sejam criados vários
         "caminhos", que possuem diferentes instruções dentro de cada um. Dentro do case é implementado um código, portanto, assim que um
         valor é selecionado, o código de dentro é executado.
+        <p>
         <video width="100%" height="360" controls>
         <source src="video/VideoLista2.mp4" type="video/mp4"></video>
         <p>______________________________________________________________________________</p>
@@ -505,6 +507,7 @@ WHERE matriculas.status = 'Formado'</code></pre>
         usuário. 
         <p>Nesse código, foi implementada uma estrutura de repetição, que irá executar um bloco de instruções enquanto a condição for 
         verdadeira.
+        <p>
         <video width="100%" height="360" controls>
         <source src="video/VideoLista3.mp4" type="video/mp4"></video>
         <p>______________________________________________________________________________</p>

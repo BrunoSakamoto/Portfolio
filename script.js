@@ -446,6 +446,7 @@ WHERE matriculas.status = 'Formado'</code></pre>
         </ul>
 
         <h3>Exemplos de Aplicações</h3>
+        <img src="img/bdnosql.png" alt="gerador" style="width:700px;">
         <ul>
         <li>Redes Sociais: Para armazenar e consultar grandes volumes de dados de usuários e suas interações.</li>
         <li>E-commerce: Para gerenciar catálogos de produtos, carrinhos de compras e dados de usuários.</li>

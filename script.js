@@ -1,4 +1,5 @@
 const works = {
+    //Conteúdo de Automação Industrial
     "Automação Industrial": {
         title: "<h1>Automação Industrial</h1>",
         content: `
@@ -64,6 +65,7 @@ const works = {
         <button class="btao" onclick="redirecionarAI('Automação Industrial')">GitHub</button>
         `
     },
+    //Conteúdo de Desenvolvimento WEB
     "Desenvolvimento WEB": {
         title: "<h1>Desenvolvimento WEB</h1>",
         content: `
@@ -397,6 +399,7 @@ function remover_times() {
 `
 
     },
+    //Conteúdo de Banco de Dados
     "Banco de Dados": {
         title: "<h1>Banco de Dados</h1>",
         content: `
@@ -459,6 +462,7 @@ WHERE matriculas.status = 'Formado'</code></pre>
         
         `
     },
+    //Conteúdo de Linguagem de Programação
     "Linguagem de Programação": {
         title: "<h1>Linguagem de Programação</h1>",
         content: `
@@ -552,6 +556,7 @@ WHERE matriculas.status = 'Formado'</code></pre>
 
         `
     },
+    //Conteúdo de Ciência de Dados
     "Ciência de Dados": {
         title: "<h2>Ciência de Dados</h2>",
         content: `

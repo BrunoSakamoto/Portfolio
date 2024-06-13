@@ -290,6 +290,85 @@ function backHome() {
 
 <p>______________________________________________________________________________</p>
 <h1>Projeto de árvore DOM(Document Object Model)</h1>
+<p>Esse projeto cria uma tebela de acordo com os preenchimentos do usuário 
+<img src="img/DOM.png" alt="gerador" style="width:500px;">
+<h3>Código para o funcionamento do projeto</h3>
+<pre><code>var contadorLinhas = 1; // --> (ID) contar linhas
+var addButton = document.getElementById("addButton");
+var editButton = document.getElementById("editButton");
+var removeButton = document.getElementById("removeButton");
+var tabela = document.getElementById("tabelaTimes");
+
+// --> adicionar funções aos botões
+addButton.addEventListener("click", adicionar_times);
+editButton.addEventListener("click", editar_times);
+removeButton.addEventListener("click", remover_times);
+
+function adicionar_times() {
+  // --> nova linha e valores
+    var time1 = document.querySelectorAll(".Digitartextos")[0].value;
+    var time2 = document.querySelectorAll(".Digitartextos")[1].value;
+    var time3 = document.querySelectorAll(".Digitartextos")[2].value;
+
+    var novaLinha = tabela.insertRow();
+    novaLinha.setAttribute("id", "linha" + contadorLinhas);
+
+    // --> inserir os valores da linha
+    var celulaID = novaLinha.insertCell(0);
+    celulaID.innerHTML = contadorLinhas;
+
+    var celulaTime1 = novaLinha.insertCell(1);
+    celulaTime1.innerHTML = time1;
+
+    var celulaTime2 = novaLinha.insertCell(2);
+    celulaTime2.innerHTML = time2;
+
+    var celulaTime3 = novaLinha.insertCell(3);
+    celulaTime3.innerHTML = time3;
+
+    // --> incrementa o ID
+    contadorLinhas++;
+
+    document.querySelectorAll(".Digitartextos").forEach(input => {
+        input.value = "";
+    });
+}
+
+function editar_times() {
+  // --> editar o ID informando a linha da tabela
+    var idLinha = prompt("Digite o ID da linha que deseja editar:");
+    var novaLinha = tabela.querySelector("#linha" + idLinha);
+    if (novaLinha) {
+        var novoTime1 = prompt("Novo time 1:");
+        var novoTime2 = prompt("Novo time 2:");
+        var novoTime3 = prompt("Novo time 3:");
+        // --> inserir novos valores
+        novaLinha.cells[1].innerHTML = novoTime1;
+        novaLinha.cells[2].innerHTML = novoTime2;
+        novaLinha.cells[3].innerHTML = novoTime3;
+    } else {
+        alert("ID de linha inválido!");
+    }
+}
+
+function remover_times() {
+  // --> remover a linha informando o ID
+    var idLinha = prompt("Digite o ID da linha que deseja remover:");
+    var linhaRemover = tabela.querySelector("#linha" + idLinha);
+    if (linhaRemover) {
+        linhaRemover.remove();
+    } else {
+        alert("ID de linha inválido!");
+        }
+    }
+}</code></pre>
+
+<ul>
+<li>Adicionar Linhas: A função adicionar_times coleta os valores de três campos de entrada (inputs) com a classe "Digitartextos", cria uma nova linha na tabela, insere os valores nas células da nova linha e incrementa o contador de linhas.</li>
+<li>Editar Linhas: A função editar_times solicita o ID da linha a ser editada, solicita os novos valores para cada célula da linha e atualiza as células correspondentes.</li>
+<li>Remover Linhas: A função remover_times solicita o ID da linha a ser removida e remove a linha da tabela.</li>
+<li>Redirecionar: A função backHome redireciona o usuário para uma página chamada "menu.html".</li>
+</ul>
 
 <p>______________________________________________________________________________</p>
 <h1>Gerador de JavaScript</h1>
@@ -321,6 +400,7 @@ function backHome() {
     "Banco de Dados": {
         title: "<h1>Banco de Dados</h1>",
         content: `
+        
         <h2>Sistema Educacional</h2>
         <h3>Diagrama Entidade Relacionamento</h3>
         <img src="img/DERSE.png" alt="DER" style="width:99%;" >
@@ -345,8 +425,36 @@ WHERE matriculas.status = 'Formado'</code></pre>
         <p>para juntar duas tabelas e assim encontrar um informação específica. Nesse caso, usamos o status da matrícula para saber quais 
         alunos estavam formados.
         <img src="img/formados.png" alt="form" style="width: 99%;">
+        <p>______________________________________________________________________________</p>
 
+        <h1>Banco de Dados NoSQL</h1>
+        <p>É uma categoria de sistema de gerenciamento de banco de dados projetados para lidar com grandes volumes de
+        dados distribuídos e oferecer flexibilidade no armazenamento de dados.
+        <h3>Vantangens dos Bancos de Dados NoSQL</h3>
+        <ul>
+        <li>Desempenho e Escalabilidade: Capacidade de lidar com grandes volumes de dados e alta demanda de leitura/escrita, escalando horizontalmente.</li>
+        <li>Flexibilidade: Suporte a dados semi-estruturados e não estruturados, permitindo mudanças rápidas no esquema dos dados.</li>
+        <li>Alta Disponibilidade: Projetados para operar em ambientes distribuídos com replicação e tolerância a falhas.</li>
+        <li>Desenvolvimento Ágil: Adequados para desenvolvimento ágil e rápido, onde os requisitos de dados podem evoluir rapidamente.</li>
+        </ul>
 
+        <h3>Desvantagens dos Bancos de Dados NoSQL</h3>
+        <ul>
+        <li>Consistência Eventual: Muitos bancos de dados NoSQL adotam o modelo de consistência eventual, o que pode ser uma desvantagem para aplicações que exigem consistência imediata.</li>
+        <li>Complexidade: Gerenciamento de um sistema distribuído pode ser complexo e exigir conhecimento especializado.</li>
+        <li>Falta de Padrões: Diversidade de modelos e falta de uma linguagem de consulta padrão como o SQL podem dificultar a integração e a curva de aprendizado.</li>
+        </ul>
+
+        <h3>Exemplos de Aplicações</h3>
+        <ul>
+        <li>Redes Sociais: Para armazenar e consultar grandes volumes de dados de usuários e suas interações.</li>
+        <li>E-commerce: Para gerenciar catálogos de produtos, carrinhos de compras e dados de usuários.</li>
+        <li>IoT (Internet das Coisas): Para armazenar e processar dados gerados por dispositivos conectados.</li>
+        <li>Análise de Dados: Para análise em tempo real de grandes volumes de dados.</li>
+        </ul>
+        
+        <button class="btao" onclick="redirecionarBD('Banco de Dados')">Banco de Dados</button>
+        
         `
     },
     "Linguagem de Programação": {
@@ -456,6 +564,10 @@ function redirecionar() {
 
 function redirecionarAI() {
     window.open("https://github.com/BrunoSakamoto/Listas/tree/main/ATV%20-%20Arduino", "_blank")
+}
+
+function redirecionarBD() {
+    window.open("https://github.com/BrunoSakamoto/Banco-de-Dados", "_blank")
 }
 
 function redirecionarLP() {

@@ -3,6 +3,10 @@ const works = {
     "Automação Industrial": {
         title: "<h1>Automação Industrial</h1>",
         content: `
+        <h2>O que é a Automação Indsutrial?</h2>
+        <p>A automação industrial é um conjunto de tecnologias que utiliza sistemas e dispositivos de controle, como software e 
+        robótica, para permitir a operação automática de processos e máquinas industriais sem a necessidade de operadores humanos.</p>
+
         <h4>Aqui irei mostrar alguns dos projetos realizados e o que eles fazem:</h4>
         <h3>Semáforo</h3>
         <p>Nesse projeto simulamos as luzes de um semáforo em um arduino utilizando LEDs.</p>
@@ -69,6 +73,10 @@ const works = {
     "Desenvolvimento WEB": {
         title: "<h1>Desenvolvimento WEB</h1>",
         content: `
+        <h2>O que é o Desenvolvimento WEB?</h2>
+        <p>é uma área da tecnologia responsável pela criação, codificação e programação de sites, aplicativos e seus respectivos 
+        elementos de linguagem.</p>
+        
         <h4>Aqui irei apresentar alguns projetos feitos utilizando o JavaScript e o que eles fazem.</h4>
         <h1>Menu</h1>
         <p>Nesse projeto utilizei o JavaScript para produzir um menu lateral que contém 3 projetos que realizei

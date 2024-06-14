@@ -563,6 +563,80 @@ WHERE matriculas.status = 'Formado'</code></pre>
     "Ciência de Dados": {
         title: "<h2>Ciência de Dados</h2>",
         content: `
+        <h3>Princípios de Ciência de Dados</h3>
+        Os princípios de Ciência de Dados envolvem a coleta, processamento, análise e interpretação de grandes 
+        volumes de dados para extrair informações úteis e tomar decisões informadas. Incluem a utilização de 
+        técnicas estatísticas, aprendizado de máquina e algoritmos para identificar padrões e tendências.
+
+        <h3>Amostragem</h3>
+        A amostragem é o processo de selecionar uma parte representativa de uma população para análise. 
+        Métodos comuns incluem amostragem aleatória simples, estratificada e sistemática. A amostragem é 
+        essencial para inferir propriedades de toda a população a partir de um subconjunto de dados.
+
+        Escalas de Medição
+        As escalas de medição classificam dados em diferentes categorias com base em suas propriedades:
+        <ul>
+        <li>Nominal: Categorias sem ordem (ex.: tipos de frutas).</li>
+        <li>Ordinal: Categorias com ordem (ex.: classificações de satisfação).</li>
+        <li>Intervalar: Diferenças mensuráveis, mas sem zero absoluto (ex.: temperatura em Celsius).</li>
+        <li>Racional: Possui zero absoluto (ex.: peso, altura).</li>
+        </ul>
+
+        <h3>Tendências Centrais</h3>
+        As medidas de tendência central fornecem um valor central ou típico para um conjunto de dados:
+        <ul>
+        <li>Média: Soma dos valores dividida pelo número de valores.</li>
+        <li>Mediana: Valor central quando os dados são ordenados.</li>
+        <li>Moda: Valor que ocorre com maior frequência.</li>
+        </ul>
+
+        <h3>Medidas de Dispersão</h3>
+        As medidas de dispersão descrevem a variabilidade ou dispersão dos dados:
+        <ul>
+        <li>Variância: Média dos quadrados das diferenças dos valores em relação à média.</li>
+        <li>Desvio padrão: Raiz quadrada da variância, indicando a dispersão dos dados.</li>
+        <li>Amplitude: Diferença entre o maior e o menor valor.</li>
+        </ul>
+
+        <h3>Teste de Hipóteses</h3>
+        O teste de hipóteses envolve formular uma hipótese nula e uma hipótese alternativa, e usar dados amostrais 
+        para decidir se há evidências suficientes para rejeitar a hipótese nula. Métodos incluem testes "t", testes 
+        chi-quadrado, ANOVA, entre outros.
+
+        <h3>Inferência</h3>
+        A inferência estatística permite tirar conclusões sobre uma população com base em uma amostra. Inclui 
+        estimativas pontuais, intervalos de confiança e testes de significância.
+
+        <h3>Análise de Dados</h3>
+        A análise de dados envolve explorar, limpar e transformar dados para obter insights. Métodos incluem 
+        análise exploratória de dados (EDA), visualização de dados, modelagem preditiva e regressão.
+
+        <h3>Funções</h3>
+        Em matemática, uma função relaciona cada elemento de um conjunto a exatamente um elemento de outro 
+        conjunto. Funções são fundamentais para modelar relações entre variáveis em ciência de dados.
+
+        <h3>Limites</h3>
+        O limite de uma função descreve o comportamento da função à medida que o argumento se aproxima de um 
+        valor específico. Limites são essenciais para definir derivadas e integrais.
+
+        <h3>Derivadas</h3>
+        A derivada de uma função mede a taxa de variação da função em relação a uma variável. Derivadas são 
+        utilizadas para encontrar máximos e mínimos de funções e para modelar a mudança contínua.
+
+        <h3>Integrais</h3>
+        A integral de uma função representa a área sob a curva da função. Integrais são usadas para calcular 
+        áreas, volumes e para resolver problemas de acumulação.
+
+        <h3>Raízes Racionais</h3>
+        As raízes racionais de uma equação são os valores de x que satisfazem a equação polinomial f(x)=0. 
+        Encontrar raízes racionais envolve determinar os fatores do termo constante e do coeficiente líder da 
+        equação polinomial.
+
+        <p>Esses conceitos são fundamentais para a análise de dados e a aplicação de técnicas de ciência de dados 
+        em diversas áreas.
+        <p>
+        <p>______________________________________________________________________________</p>
+        <h3>Para obter o acesso para todo conteúdo de banco de dados, clique no botão abaixo.</h3>
         <button class="botao" onclick="redirecionarCD('Ciência de Dados')">GoogleColab</button>
         `
     }

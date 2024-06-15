@@ -558,9 +558,46 @@ WHERE matriculas.status = 'Formado'</code></pre>
         <li>Quando a batalha termina, o vencedor é declarado.</li>
         </ul>
         <video width="100%" height="360" controls>
-        
         <source src="video/videoPOO.mp4" type="video/mp4"></video>
+        <p>______________________________________________________________________________</p>
 
+        <h3>Projeto Screensaver</h3>
+        <p>Nesse projeto, tratamos:
+        <ul>
+        <li>Classes e Hierarquia de Herança: Existem várias classes que representam diferentes formas 
+        geométricas (Rectangle, Circle, Square, Ellipse) que estendem a classe abstrata Shape. Isso forma uma 
+        hierarquia onde Shape é a classe base e as outras são especializações dela.</li>
+
+        <li>Encapsulamento: Cada classe (Shape, Rectangle, Circle, Square, Ellipse) encapsula seu estado e 
+        comportamento através de métodos (getters, setters) e atributos privados.</li>
+
+        <li>Polimorfismo: O método draw(Graphics g) na classe abstrata Shape é implementado de forma polimórfica 
+        em cada subclasse para desenhar a forma específica na tela. Isso permite tratar objetos de diferentes 
+        classes de forma uniforme.</li>
+
+        <li>Construtores: Cada classe possui construtores que inicializam seus atributos, permitindo a criação de 
+        objetos com diferentes configurações iniciais (como tamanho, posição, velocidade e cor).</li>
+
+        <li>Interface Runnable: A classe Screensaver implementa a interface Runnable, demonstrando o uso de 
+        interfaces para permitir que objetos possam ser executados em threads separadas (mecanismo de execução 
+        paralela para animação). </li>
+
+        <li>Eventos e Callbacks: Utilização de eventos do teclado (keyPressed e keyReleased) para controlar o 
+        movimento ou interação do usuário com o protetor de tela.</li>
+
+        <li>Swing e GUI: O projeto utiliza a biblioteca Swing para criar a interface gráfica. A classe Screensaver 
+        estende javax.swing.JFrame e configura a interface do usuário através de métodos como initComponents() para 
+        inicializar e configurar os componentes da tela.</li>
+
+        <li>Gerenciamento de Gráficos: Uso de BufferStrategy para gerenciar o desenho off-screen, melhorando a 
+        eficiência na renderização de gráficos na tela.</li>
+
+        <li>Tratamento de Colisões: Implementação de lógica de colisão na classe Rectangle, onde as formas mudam 
+        de direção quando atingem os limites da tela, demonstrando o uso de lógica orientada a eventos e 
+        comportamento específico de subclasses.</li>
+        </ul>
+        <video width="100%" height="360" controls>
+        <source src="video/poo.mp4" type="video/mp4"></video>
         <p>______________________________________________________________________________</p>
         <h3>Para acessar todos os projetos, navegue pelo botão abaixo.</h3>
         <button class="btao" onclick="redirecionarLP('Linguagem de Programação')">GitHub</button>
